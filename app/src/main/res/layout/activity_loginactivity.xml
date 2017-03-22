@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/startpicture" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            />
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="348dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:hint="邮箱/手机号"
+            android:textSize="8dp"
+            android:textColorHint="#9B9B9B"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="密码" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="348dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:hint="登录密码"
+            android:textSize="8dp"
+            android:textColorHint="#9B9B9B"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom">
+        <Button
+            android:id="@+id/loginbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="登录"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:background="#09CDFF"
+
+        />
+    </LinearLayout>
+
+</LinearLayout>
