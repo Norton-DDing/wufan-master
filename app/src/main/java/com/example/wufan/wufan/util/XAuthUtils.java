@@ -2,8 +2,8 @@ package com.example.wufan.wufan.util;
 
 import android.text.TextUtils;
 import com.orhanobut.logger.Logger;
-import com.troy.xifan.config.Constants;
-import com.troy.xifan.model.response.OAuthToken;
+import com.example.wufan.wufan.config.Constants;
+import com.example.wufan.wufan.model.response.OAuthToken;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -79,14 +79,14 @@ public final class XAuthUtils {
                 OAuthEncoder.encode("http://" + httpUrl.url().getHost() + httpUrl.url().getPath()),
                 OAuthEncoder.encode(queryItems));
         String signString = doSign(baseString);
-        Logger.i("baseString:%s\nsignString:%s", baseString, signString);
+        Logger.i("baseString:%s\nsignString:%s", baseString,signString);
         return signString;
     }
 
     public static OAuthToken parseToken(String responseData) {
         String oauthToken = PatternUtils.extractToken(TOKEN_REGEX, responseData);
         String oauthTokenSecret = PatternUtils.extractToken(TOKEN_SECRET_REGEX, responseData);
-        Logger.i("oauthToken:%s,oauthTokenSecret%s", oauthToken, oauthTokenSecret);
+        Logger.i("oauthToken:%s,oauthTokenSecret%s", oauthToken,oauthTokenSecret);
         return new OAuthToken(oauthToken, oauthTokenSecret);
     }
 
