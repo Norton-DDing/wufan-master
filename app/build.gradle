@@ -1,22 +1,19 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'com.chenenyu.router'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "24.0.1"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         applicationId "com.example.wufan.wufan"
         minSdkVersion 21
-        targetSdkVersion 22
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
+
 }
 
 dependencies {
@@ -33,6 +30,11 @@ dependencies {
     compile 'io.reactivex:rxandroid:1.2.1'
     compile 'io.reactivex:rxjava:1.2.2'
     compile 'com.google.code.gson:gson:2.8.0'
+
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okio:okio:1.7.0'
+
+    compile 'com.github.orhanobut:logger:1.12'
 
     compile 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
