@@ -3,4 +3,12 @@
     <string name="text_dialog_positive">确定</string>
     <string name="text_dialog_negative">取消</string>
     <string name="text_dialog_delete_msg">确定删除吗？</string>
+
+    <!-- login -->
+    <string name="text_login_username">邮箱名/手机号</string>
+    <string name="text_login_password">密码</string>
+    <string name="text_login_button">登录</string>
+    <string name="logining_text">登录中</string>
+    <string name="login_text">登录成功</string>
+
 </resources>
