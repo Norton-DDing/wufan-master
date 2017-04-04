@@ -13,7 +13,7 @@ public class BootActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bootactivity);
         Handler handler = new Handler();
-        handler.postDelayed(new splashhandler(), 3000); // 延迟3秒，再运行splashhandler的run()
+        handler.postDelayed(new splashhandler(), 3500); // 延迟3.5秒，再运行splashhandler的run()
     }
 
     class splashhandler implements Runnable

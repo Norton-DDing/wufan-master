@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -48,5 +49,45 @@
 
     </RelativeLayout>
 
+=======
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bootbackground">
+>>>>>>> develop
 
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textCursorDrawable="@color/texthint"
+        android:layout_gravity="center"
+        android:hint="@string/text_login_username"
+        android:textSize="16sp"
+        android:textColor="@color/texthint"
+        android:textColorHint="@color/texthint"
+        android:background="@drawable/loginbutton"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:textCursorDrawable="@color/texthint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_login_password"
+        android:textColorHint="@color/texthint"
+        android:textSize="16sp"
+        android:textColor="@color/texthint"
+        android:layout_marginTop="16sp"
+        android:background="@drawable/loginbutton"
+        />
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbutton"
+        android:text="@string/text_login_button"
+        android:textColor="@color/texthint"
+        android:textSize="16sp"
+        android:layout_marginTop="32sp"/>
 </LinearLayout>
