@@ -11,4 +11,11 @@
     <string name="logining_text">登录中</string>
     <string name="login_text">登录成功</string>
 
+    <!-- text -->
+    <string name="text_no_more">没有更多数据了</string>
+    <string name="text_network_error">请检查网络连接</string>
+    <string name="text_retry">请点击重试</string>
+    <string name="text_empty">空空如也</string>
+
+
 </resources>
